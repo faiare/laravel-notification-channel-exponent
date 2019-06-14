@@ -12,7 +12,7 @@ use NotificationChannels\Exponent\Exceptions\CouldNotSendNotification;
  */
 class ExponentChannel
 {
-    const DEFAULT_API_URL = 'https://exp.host/--/api/v2';
+    const DEFAULT_API_URL = 'https://exp.host';
     const MAX_TOKEN_LENGTH = 100;
 
     protected $client;
@@ -70,7 +70,7 @@ class ExponentChannel
         }
 
         try {
-            $this->client->post('/push/send', [
+            $this->client->post('/--/api/v2/push/send', [
                 'body' => json_encode($request),
                 'headers' => [
                     'Content-Type' => 'application/json',
