@@ -32,6 +32,13 @@
             "NotificationChannels\\Exponent\\Test\\": "tests"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\Exponent\\ExponentServiceProvider"
+            ]
+        }
+    },
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
