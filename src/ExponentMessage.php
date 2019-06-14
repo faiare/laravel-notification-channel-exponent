@@ -2,6 +2,10 @@
 
 namespace NotificationChannels\Exponent;
 
+/**
+ * Class ExponentMessage.
+ * @package NotificationChannels\Exponent
+ */
 class ExponentMessage
 {
     protected $tokens = [];
@@ -31,6 +35,7 @@ class ExponentMessage
     public function setTokens($tokens)
     {
         $this->tokens = $tokens;
+
         return $this;
     }
 
@@ -41,6 +46,7 @@ class ExponentMessage
     public function setTitle($title)
     {
         $this->title = $title;
+
         return $this;
     }
 
@@ -51,6 +57,7 @@ class ExponentMessage
     public function setBody($body)
     {
         $this->body = $body;
+
         return $this;
     }
 
@@ -61,6 +68,7 @@ class ExponentMessage
     public function setSound($sound)
     {
         $this->sound = $sound;
+
         return $this;
     }
 
@@ -71,6 +79,7 @@ class ExponentMessage
     public function setBadge($badge)
     {
         $this->badge = $badge;
+
         return $this;
     }
 
@@ -81,6 +90,7 @@ class ExponentMessage
     public function setTtl($ttl)
     {
         $this->ttl = $ttl;
+
         return $this;
     }
 
@@ -91,6 +101,7 @@ class ExponentMessage
     public function setChannelId($channelId)
     {
         $this->channelId = $channelId;
+
         return $this;
     }
 
@@ -101,6 +112,7 @@ class ExponentMessage
     public function setJsonData($jsonData)
     {
         $this->jsonData = $jsonData;
+
         return $this;
     }
 
@@ -120,13 +132,13 @@ class ExponentMessage
     public function toArray()
     {
         return [
-            'title'     =>  $this->title,
-            'body'      =>  $this->body,
-            'sound'     =>  $this->sound,
-            'badge'     =>  $this->badge,
-            'ttl'       =>  $this->ttl,
-            'channelId' =>  $this->channelId,
-            'data'      => $this->jsonData,
+            'title' => $this->title,
+            'body' => $this->body,
+            'sound' => $this->sound,
+            'badge' => $this->badge,
+            'ttl' => $this->ttl,
+            'channelId' => $this->channelId,
+            'data' => $this->jsonData,
         ];
     }
 }

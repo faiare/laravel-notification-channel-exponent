@@ -8,7 +8,7 @@ use Illuminate\Notifications\Notification;
 use NotificationChannels\Exponent\Exceptions\CouldNotSendNotification;
 
 /**
- * Class ExponentChannel
+ * Class ExponentChannel.
  * @package NotificationChannels\Exponent
  */
 class ExponentChannel
@@ -75,7 +75,7 @@ class ExponentChannel
                 'body' => json_encode($request),
                 'headers' => [
                     'Content-Type' => 'application/json',
-                ]
+                ],
             ]);
         } catch (RequestException $e) {
             throw CouldNotSendNotification::serviceRespondedWithAnError($e);
