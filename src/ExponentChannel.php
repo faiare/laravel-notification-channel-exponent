@@ -9,7 +9,6 @@ use NotificationChannels\Exponent\Exceptions\CouldNotSendNotification;
 
 /**
  * Class ExponentChannel.
- * @package NotificationChannels\Exponent
  */
 class ExponentChannel
 {

@@ -7,7 +7,6 @@ use Illuminate\Support\ServiceProvider;
 
 /**
  * Class ExponentServiceProvider.
- * @package NotificationChannels\Exponent
  */
 class ExponentServiceProvider extends ServiceProvider
 {

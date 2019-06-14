@@ -4,7 +4,6 @@ namespace NotificationChannels\Exponent;
 
 /**
  * Class ExponentMessage.
- * @package NotificationChannels\Exponent
  */
 class ExponentMessage
 {
