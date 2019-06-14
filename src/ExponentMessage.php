@@ -137,7 +137,7 @@ class ExponentMessage
             'badge' => $this->badge,
             'ttl' => $this->ttl,
             'channelId' => $this->channelId,
-            'data' => $this->jsonData,
+            'data' => json_encode($this->jsonData),
         ];
     }
 }
